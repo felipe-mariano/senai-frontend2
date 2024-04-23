@@ -23,14 +23,15 @@ function gravar() {
             lsItem[indice] = obj;
         }
         console.table(lsItem);
-        ataulizarTabela();
+        atualizarTabela();
         limparForm();
     } else {
         alert('Item e Status devem estar preenchidos')
     }
 }
 
-function ataulizarTabela() {
+function atualizarTabela() {
+    localStorage.setItem("lsItem", JSON, stringify(lsItem));
     let tbody = '';
     if (lsItem.length > 0) {
         let i = 0;
@@ -61,9 +62,17 @@ function apagar() {
     let indice = document.getElementById('indice').value;
     if (indice != "") {
         lsItem.splice(indice, 1);
-        ataulizarTabela();
+        atualizarTabela();
         limparForm();
     } else {
         alert("Necessário selecionar algum item.")
     }
 }
+
+lsItem = JSON.parse(localStorage.getItem("lsItem"));
+if (lsItem == null) {
+    localStorage.setItem("lsItem", "[]");
+    lsItem = [];
+}
+
+atualizarTabela();
