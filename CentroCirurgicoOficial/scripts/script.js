@@ -47,7 +47,7 @@ function ataulizarTabela() {
             if(obj.nome != ""){
                 tbody += `<tr onclick='editar(${i})'>
                 <td>${obj.nome}</td>
-                <td class="${tpStatus[obj.status]}">${obj.status}</td>
+                <td class="${tpStatus[obj.status]}">${obj.status}(${obj.local})</td>
                 </tr>`;
             }
             i++;
