@@ -8,6 +8,16 @@ h1 {
     width: 70px;
     border: 3px solid green;
     border-radius: 5%;
+    margin: 1.5px;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bloco:hover {
+    background-color: coral;
 }
 
 #campo {
@@ -18,5 +28,5 @@ h1 {
 #tela {
     display: flex;
     justify-content: center;
-    
+
 }
