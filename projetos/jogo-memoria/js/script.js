@@ -7,6 +7,11 @@ for (let i = 0; i < tamanho; i++) {
     lsEmoticons.push(lsEmoticons[i])
 }
 
+const campo = document.getElementById("campo");
+for (const key in lsEmoticons) {
+    campo.innerHTML += `<div class="bloco"></div>`;
+}
+
 //para cada bloco incluir o evento de click
 let blocos = {};
 let lsBloco = document.getElementsByClassName("bloco");
@@ -25,7 +30,7 @@ let aberto = ["", ""];
 function mostrar(b) {
     if (b.innerHTML != "") return;
 
-    if (aberto[0] !="" && aberto[1] != "") testar();
+    if (aberto[0] != "" && aberto[1] != "") testar();
 
     if (aberto[0] == "") {
         aberto[0] = b;
