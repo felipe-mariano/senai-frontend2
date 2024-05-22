@@ -24,3 +24,14 @@ for (const p of produtos) {
     `;
 
 }
+let telaCarrinho = document.querySelector('.tela-carrinho');
+let continuar = document.querySelector('.continuar');
+continuar.addEventListener('click', () => {
+    telaCarrinho.classList.toggle('ocultar-tela-carrinho');
+})
+
+let compras = document.querySelector('.compras');
+compras.addEventListener('click', () => {
+    telaCarrinho.classList.toggle('ocultar-tela-carrinho');
+    menuToggle.click(); //fechar menu suspenso nas versões mobile
+})
