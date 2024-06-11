@@ -1,4 +1,4 @@
-let menuContent = document.querySelector('.home');
+let menuContent = document.querySelector('.inicio');
 let menuToggle = menuContent.querySelector('.menu-toggle');
 let show = true;
 
