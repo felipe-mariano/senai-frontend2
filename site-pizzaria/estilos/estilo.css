@@ -30,17 +30,14 @@ html {
 
 }
 
-.logo {
-    width: 70px;
-    height: auto;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
 
 .logo img {
     width: 70px;
     height: 100%;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .logo h3 {
