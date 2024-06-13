@@ -27,7 +27,7 @@ let produtos = [
 {
     img: "imagens/vela06.jpg",
     dsImg: "Vela Citronela",
-    nome: "Vela de Citronela - 200G",
+    nome: "Vela Citronela - 200G",
     valor: 49.99    
 },
 {
